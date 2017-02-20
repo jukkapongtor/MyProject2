@@ -1,0 +1,27 @@
+body{
+	background:#eee;
+	margin:0px;
+}
+.IndHeader{
+	width:100%;
+	background :#294057;
+	border-bottom:2px solid #b99867;
+	height:60px;
+	position:fixed;
+	z-index:2;
+	color:white;
+}
+.IndHeader .IndIcon{
+	margin-top:5px;
+	font-size:32px;
+	font-weight:bolder;
+}
+.IndMain{
+	background:#fff;
+	min-height:700px;
+}
+.IndFooter{
+	background :#294057;
+	height:100px;
+	border-top:2px solid #b99867;
+}
