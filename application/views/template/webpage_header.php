@@ -12,7 +12,11 @@
 			<div class="container-fluid">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="col-md-3 IndIcon">
-						MUMFERN
+						<a href="<?php echo base_url(); ?>">MUMFERN</a>
+					</div>
+					<div class="col-md-3 col-md-offset-6 IndMenu">
+						<a href="<?php echo base_url(); ?>"><div class="IndMenu_Home IndMenu_Active">หน้าหลัก</div></a>
+						<a href="<?php echo base_url('document/list_product'); ?>"><div class="IndMenu_Pro">สินค้า</div></a>
 					</div>
 				</div>
 			</div>
@@ -20,10 +24,4 @@
 		<div class="container-fluid">
 			<div class="col-md-8 col-md-offset-2 IndMain">
 				
-			</div>
-		</div>
-		<div class="container-fluid IndFooter">
-
-		</div>
-	</body>
-  </html>
+			

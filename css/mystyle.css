@@ -4,8 +4,8 @@ body{
 }
 .IndHeader{
 	width:100%;
-	background :#294057;
-	border-bottom:2px solid #b99867;
+	background :#41668a;
+	border-bottom:2px solid #987c53;
 	height:60px;
 	position:fixed;
 	z-index:2;
@@ -13,15 +13,33 @@ body{
 }
 .IndHeader .IndIcon{
 	margin-top:5px;
-	font-size:32px;
+	font-size:36px;
 	font-weight:bolder;
+}
+.IndHeader a{
+	color:white;
+	text-decoration:none;
 }
 .IndMain{
 	background:#fff;
 	min-height:700px;
+	box-shadow: 0px -0px 20px grey;
+	padding-top:62px;
 }
 .IndFooter{
-	background :#294057;
+	background :#41668a;
 	height:100px;
-	border-top:2px solid #b99867;
+	border-top:2px solid #987c53;
+}
+.IndMenu_Home,.IndMenu_Pro{
+		float:left;
+		width:50%;
+		text-align:center;
+		font-size:18px;
+		padding-top:15px;
+		height:58px;
+}
+.IndMenu_Home:hover,.IndMenu_Pro:hover,.IndMenu_Active{
+	background:#1a2a3a;
+	cursor:pointer;
 }
