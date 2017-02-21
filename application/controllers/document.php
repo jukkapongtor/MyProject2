@@ -10,16 +10,10 @@ class document extends CI_Controller
 	}
 	public function index()
 	{
-		$this->load->view("template/webpage_header");
+		$data['page_title'] = "ยินดีต้อนรับสู่ร้านมุมเฟิร์น";
+		$this->load->view("template/webpage_header",$data);
 		$this->load->view('document/homepage');
 		$this->load->view("template/webpage_footer");
 	}
-	public function list_product()
-	{
-		$this->load->view("template/webpage_header");
-		$this->load->view('document/homepage');
-		$this->load->view("template/webpage_footer");
-	}
-
 }
 ?>
