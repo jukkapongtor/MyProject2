@@ -15,8 +15,14 @@
 						<a href="<?php echo base_url(); ?>">MUMFERN</a>
 					</div>
 					<div class="col-md-3 col-md-offset-6 IndMenu">
-						<a href="<?php echo base_url(); ?>"><div class="IndMenu_Home IndMenu_Active">หน้าหลัก</div></a>
-						<a href="<?php echo base_url('product/list_product'); ?>"><div class="IndMenu_Pro">สินค้า</div></a>
+						<?php
+							switch($page_title){
+								case "รายการสินค้า" : $mu_head1="";$mu_head2="IndMenu_Active"; break;
+								default : $mu_head1="IndMenu_Active";$mu_head2=""; break;
+							}
+						?>
+						<a href="<?php echo base_url(); ?>"><div class="IndMenu_Home <?php echo $mu_head1?>">หน้าหลัก</div></a>
+						<a href="<?php echo base_url('product/list_product'); ?>"><div class="IndMenu_Pro <?php echo $mu_head2?>">สินค้า</div></a>
 					</div>
 				</div>
 			</div>
